@@ -3,113 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Preston_W's Site</title>
+  <title>Welcome to Preston_W's Site</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-    body {
-      margin: 0;
-      background: linear-gradient(135deg, #3a3a3a, #1a1a1a);
-      font-family: 'Press Start 2P', cursive;
-      color: #eee;
-      text-align: center;
-    }
-
-    header {
-      background: url('https://i.imgur.com/NTtjzv9.png') no-repeat center;
-      background-size: cover;
-      height: 180px;
-      padding-top: 40px;
-      box-shadow: inset 0 0 60px #000;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 28px;
-      text-shadow: 2px 2px 0 #000;
-    }
-
-    nav {
-      margin: 20px 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #fff;
-      background: #2e7d32;
-      padding: 12px 24px;
-      margin: 0 8px;
-      border: 4px solid #1b5e20;
-      border-radius: 6px;
-      box-shadow: 0 6px #145214;
-      transition: background 0.3s ease;
-    }
-
-    nav a:hover {
-      background: #4caf50;
-    }
-
     main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background: #222;
-      border: 6px double #4caf50;
-      border-radius: 12px;
+      padding: 40px 20px;
     }
-
-    section {
+    .btn-container {
       margin-bottom: 40px;
     }
-
-    footer {
-      margin-top: 40px;
-      font-size: 12px;
-      color: #666;
+    button {
+      background: #2e7d32;
+      color: white;
+      border: 4px solid #1b5e20;
+      border-radius: 8px;
+      box-shadow: 0 6px #145214;
+      padding: 15px 30px;
+      margin: 0 12px;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s ease;
     }
-
-    a {
-      color: #4cafff;
+    button:hover {
+      background: #4caf50;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Preston_W's Site</h1>
-  </header>
-
-  <nav>
-    <a href="#projects">Projects</a>
-    <a href="#about">About Me</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
+  <header><h1>Welcome to Preston_W's Site</h1></header>
   <main>
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Game site I created:<br>
-      <a href="https://bit.ly/43HVkFW" target="_blank">bit.ly/43HVkFW</a></p>
-      <p>My YouTube Channel:<br>
-      <a href="https://youtube.com/@prestonwoodland" target="_blank">youtube.com/@prestonwoodland</a></p>
-      <p>More coming soon... Stay tuned! 💻🎮</p>
-    </section>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a YouTube creator and site creator!</p>
-      <p>I love combining creativity with code to make fun stuff for people to enjoy. Whether it's gaming, designing sites, or experimenting with new tech like ChatGPT, I'm always up to something cool.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>📧 Contact me at:<br>
-      <a href="mailto:Prestonwwork12@gmail.com">Prestonwwork12@gmail.com</a><br>
-      <a href="mailto:Trickn.swish@gmail.com">Trickn.swish@gmail.com</a></p>
-      <p>🕓 I’ll respond as soon as possible—but usually not on weekends (most of the time).</p>
-      <p>💬 You can also leave a comment on one of my YouTube videos if it’s urgent!</p>
-    </section>
+    <div class="btn-container">
+      <button onclick="location.href='projects.html'">Projects</button>
+      <button onclick="location.href='about.html'">About Me</button>
+      <button onclick="location.href='contact.html'">Contact</button>
+    </div>
+    <p style="max-width:600px; margin:auto; font-size: 16px; color:#eee;">
+      Hey! Welcome to my site. Use the buttons above to check out my projects, learn about me, or get in touch!
+    </p>
   </main>
-
   <footer>
     &copy; 2025 Preston_W. Built with Minecraft vibes + ChatGPT magic ✨
   </footer>
